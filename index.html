@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head: for all style of metadata and for links to things like stylesheets, fonts, icons, etc               -->
+<!--style tag is used to write CSS in the HTML file -->
+    <style>    
+    </style>
+    <head> 
+        <title>Tad's Blog</title>
+        <link rel="stylesheet" href="main.css" /> <!-- link to external stylesheet -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- This line is important for making your webpage responsive by adapting to different screen sizes -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <!-- This line specifically tells Internet Explorer to use the latest rendering engine -->
+        <meta name="author" content="Tad Kitaguchi" />
+        <meta name="description" content="This is a blog about Tad's interests." />
+        <meta property="og:title" content="Tad's Blog" />
+        <meta property=""og:description" content="This is a blog about Tad's interests." />
+        <meta property="og:image" content="https://www.vidavetcare.com/wp-content/uploads/sites/234/2022/04/golden-retriever-dog-breed-info.jpeg" />
+        <meta property=""og:url" content="https://www.youtube.com/watch?v=hX6NX-Vgqw0" />
+        <meta property="og:site_name" content="Tad's Blog" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <!-- Body: for all actual site content -->
+        <header>
+            <h1 class="title">Welcome to Tad's Blog for CPSC458 Web Design!</h1>
+            <h2 class="author">Author: Tad Kitaguchi</h2>
+            
+            <h3>Table of Content:
+            <nav>
+                <a href="https://www.youtube.com/watch?v=hX6NX-Vgqw0"> Link To An AI Car Tutorial</a><br>
+                <a href="#dog-section"> Dog Content</a><br>
+                <a href="#blob-section">Blob Content</a><br>
+                <a href="#painting_section">Painting Content</a>
+            </nav>
+            </h3>
+        </header>
+        <!-- Main: for all main content of the site -->
+        <main>
+            <div class="spacer"></div>
+            <p class="sc-gZMcBi render-stellar-contentstyles__Paragraph-sc-9v7nwy-2 dCwndB">A powerful <a href="https://www.cnn.com/2024/02/04/us/pineapple-express-storm-california-weather-monday/index.html" target="_blank" previewlistener="true">storm has lashed Southern California</a> with torrential rain that has triggered dangerous flooding, mudslides and debris flows. On Monday, photos showed downed trees, debris in the streets and rising rivers.
+            </p>        
+            <ul>
+                <li class="item">Item 1</li>
+                <li class="item">Item 2</li>
+                <li class="item" id="selected">Item 3</li>
+                <li class="item">Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <div class="spacer"></div>
+
+            <section id="dog-section">
+                <h2>Dog Alert</h2>
+                <p>
+                    This is an 
+                    This is a picture of a Golden Retriever. 
+                    I do not own a Golden Retriever, I own a German Shepherd. 
+                    I will share a picture of my German Shepherd next time. 
+                </p>
+                <figure>
+                <img class="dog" src="https://www.vidavetcare.com/wp-content/uploads/sites/234/2022/04/golden-retriever-dog-breed-info.jpeg" alt="Golden retriever looking good" /> <!-- alt text is for screen readers -->
+                </figure>
+            </section>
+            <div class="spacer"></div>
+
+            <section id="blob-section">
+                <h2>Blob Alert</h2>
+                <p>
+                    This is a paragraph about blobs. 
+                    The next three to five sentences are being typed out for asthetic purposes. 
+                    Sentence one is describing the color of the blob. Sentence two is describing the shape of the blob. 
+                    Sentence three is describing the size of the blob. Sentence four is describing the texture of the blob. 
+                    Sentence five is describing the smell of the blob.
+                </p>
+                <figure>
+                <img class="blob" src="https://static.vecteezy.com/system/resources/thumbnails/021/971/655/small/color-blob-banner-free-png.png"/>
+                </figure>
+            </section>
+            <div class="spacer"></div>
+
+            <section id="painting_section">
+                <figure>
+                    <!--class is a way to add a hook to an element so that you can style it with CSS. src is the source of the image. alt is the alternative text for the image.-->
+                    <img class="painting" src="https://images.e-flux-systems.com/283237_588943ecc546db7cc5168e868a7848e7.jpg,1600" alt="Monet's Water Lillies: An impressionist style painting of flowers in a pond."></img>
+                    <figcaption class="attribution">
+                    Water Lillies by <span class="artist"> Claude Monet </span>
+                    </figcaption>
+                </figure>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright 2024</p>
+        </footer>    
+    </body> 
+        
+</html>

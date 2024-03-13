@@ -1,0 +1,189 @@
+html,
+body {
+  /* margin: 0; */
+  min-height: 100%;
+}
+html {
+  --background: #5649e6;
+  --dark: #283618;
+  --light: #fefae0;
+  --color-primary: #020c11;
+  background-color: var(--background); /* sets background color to variable */
+  margin: 0;
+    /*spacing unit */
+  --spacing: 100px;
+  --font: "Noto Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box; /* makes sure padding and border are included in the width and height of an element */
+}
+
+/* figure is used to contain images, illustrations, diagrams, code snippets, etc. */
+figure {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.title {
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0;
+  color: var(--light);
+  text-align: center;
+}
+
+.author {
+  font-style: italic;
+  margin: 0;
+  font-size: 1.5rem;
+  padding-top: calc(var(--spacing) / 4);
+  color: var(--light);
+  text-align: center;
+}
+
+.dog {
+  max-width: 400px;
+  margin-left: auto;
+  /* margin-bottom: 100px; */
+}
+
+.blob {
+  max-width: 400px;
+  margin-left: 80px;
+  /* margin-bottom: 100px; */
+}
+
+.painting {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  /* object-fit: contain; */
+  line-height: 0;
+  background-color: var(--light);
+  padding: 20px;
+  border: 10px solid var(--dark);
+}
+
+.attribution {
+  margin-top: 10px;
+  margin-left: auto; /* forces to furthest right side, auto takes up as much space */
+  margin-right: auto; /* in tandem with margin-left, sets to center */
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 10px;
+  font-size: .8rem;
+  width: fit-content; /* sets width to whatever is required by size of content */
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.artist {
+  /* inline element, goes with flow */
+  font-weight: 700;
+  /* background-color: var(--background); */
+  height: 2rem; /* will not do anything because it is an in-line element*/
+}
+
+/* class selector */
+.item { /*select all list items with class item*/
+  background: orange; /*turn all list items with class item lightgreen*/
+}
+
+.spacer {
+  height: var(--spacing);
+}
+
+/* element selector */
+li { /*select all list items*/
+  background: deeppink; /*turn all list items pink*/
+}
+
+
+
+#selected { /*select list item with id selected*/
+  background: green; /*turn list item with id selected lightgreen*/
+}
+
+li:nth-child(even) { /*sudo selector. select all list items*/
+  background: yellow; 
+}
+
+li:last-child { /*sudo selector. select last list item*/
+  background: red; /*turn last list item pink*/
+}
+/* li:not(:last-child) { sudo selector. select all list items except last */
+  /* background: blue; turn all list items except last pink */
+/* } */
+li:nth-child(1), li:nth-child(2){
+  background: pink;
+}
+li:nth-child(1){
+  background-color: rgb(184, 125, 240);
+}
+/*sudo selector. select all list items except last*/
+/* 
+li:not(:last-child) {
+  background: blue; /*turn all list items except last blue
+} 
+*/
+body {
+  background: #10648f;
+  /* color: var(--color-primary); */
+  /* margin: 0;*/ /* removes default margin */
+  min-height: 100%;
+  background-image: linear-gradient(
+  205deg,
+  hsl(219, 65%, 50%) 0%,
+  hsl(197, 60%, 41%) 50%,
+  hsl(201, 82%, 60%) 100%
+);
+  max-width: 60cm;  
+  font-family: var(--font);
+}
+p {
+  font-size: 1.4rem; /*rem stands for root em. 1rem is equal to the font-size of the root element (html)*/
+  line-height: 1.4;
+  font-weight: 20
+}
+h1 { 
+  color: white;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  background: white;
+  height: calc(20vh - 1.5rem);
+  width: 70%;
+  border-radius: 5px;
+}
